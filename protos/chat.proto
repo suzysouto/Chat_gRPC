@@ -1,0 +1,15 @@
+syntax = "proto3"; //Especificando a versão.
+
+package example;
+
+//Classe service para ser usada pelo cliente.
+service Chat {
+    rpc join (stream Message) returns (stream Message){}
+    rpc send (Message) returns (Message){}
+}
+
+//Informações que serão trocadas entre cliente e servidor.
+message Message {
+    string user = 1;
+    string text = 2;
+}
