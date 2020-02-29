@@ -49,7 +49,7 @@ function onData(message) {
 }
 
 //Pergunta o nome do usuário e então inicia o chat.
-rl.question("What's ur name? ", answer => {
+rl.question("Qual o seu nome? ", answer => {
     username = answer;
 
     startChat();
