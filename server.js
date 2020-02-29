@@ -20,7 +20,7 @@ let users = [];
 //Menssagem recebida do cliente quando entra no chat.
 function join(call, callback) {
     users.push(call);
-    notifyChat({ user: "Server", text: "new user joined ..."});
+    notifyChat({ user: "Server", text: "Novo usuário participando ..."});
 }
 
 //Menssagem recebida do cliente.
